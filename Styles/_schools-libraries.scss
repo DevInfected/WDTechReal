@@ -1,0 +1,153 @@
+#schools-libraries {
+  padding: 5%;
+  background-color: $background-light;
+  .schools-libraries-left {
+    .temp-img {
+      margin-bottom: 3rem;
+      max-width: 20em;
+    }
+  }
+  .schools-libraries-right {
+    max-width: 45em;
+    .schools-libraries-intro {
+      .divider {
+        max-width: 5em;
+        min-height: 3px;
+        background-color: $accent-color;
+      }
+      .title {
+        color: $primary-color;
+        font-size: 1.7em;
+        padding-top: 1.5rem;
+      }
+    }
+    .schools-libraries-disc {
+      color: $secondary-color;
+      padding: 2rem 0;
+      line-height: 1.4em;
+    }
+
+    .quote {
+      color: black;
+      min-height: 3rem;
+      min-width: 9rem;
+      border-radius: 5px;
+      border: none;
+      background-color: $accent-color;
+      font-weight: 600;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #schools-libraries {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 10%;
+    .schools-libraries-left {
+      .temp-img {
+        max-height: 25em;
+        min-height: 20em;
+        min-width: 20em;
+        max-width: 25em;
+        margin-right: 5rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1600px) {
+  #schools-libraries {
+    padding: 5% 0px;
+    background-color: $background-light;
+    justify-content: space-around;
+    .schools-libraries-left {
+      .temp-img {
+        max-height: 40em;
+        min-height: 35em;
+        min-width: 35em;
+        max-width: 40em;
+        margin-bottom: 3rem;
+      }
+    }
+    .schools-libraries-right {
+      .schools-libraries-intro {
+        .divider {
+          max-width: 5em;
+          min-height: 3px;
+          background-color: $accent-color;
+        }
+        .title {
+          color: $primary-color;
+          font-size: 3em;
+          padding-top: 1.5rem;
+        }
+      }
+      .schools-libraries-disc {
+        color: $secondary-color;
+        padding: 3rem 0;
+        line-height: 1.6em;
+        font-size: 1.3em;
+      }
+
+      .quote {
+        color: black;
+        min-height: 3rem;
+        min-width: 9rem;
+        border-radius: 5px;
+        border: none;
+        background-color: $accent-color;
+        font-weight: 600;
+      }
+    }
+  }
+}
+@media screen and (min-width: 2000px) {
+  #schools-libraries {
+    padding: 5% 10%;
+    background-color: $background-light;
+    .schools-libraries-left {
+      .temp-img {
+        max-height: 40em;
+        min-height: 35em;
+        min-width: 35em;
+        max-width: 40em;
+        margin-bottom: 3rem;
+        margin-right: 2rem;
+      }
+    }
+    .schools-libraries-right {
+      .schools-libraries-intro {
+        .divider {
+          max-width: 5em;
+          min-height: 3px;
+          background-color: $accent-color;
+        }
+        .title {
+          color: $primary-color;
+          font-size: 3em;
+          padding-top: 1.5rem;
+        }
+      }
+      .schools-libraries-disc {
+        color: $secondary-color;
+        padding: 3rem 0;
+        line-height: 1.6em;
+        font-size: 1.3em;
+      }
+
+      .quote {
+        color: black;
+        min-height: 3rem;
+        min-width: 9rem;
+        border-radius: 5px;
+        border: none;
+        background-color: $accent-color;
+        font-weight: 600;
+      }
+    }
+  }
+}

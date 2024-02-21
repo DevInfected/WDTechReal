@@ -1,0 +1,61 @@
+@import "_globals";
+
+nav {
+  min-height: 8rem;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid orange;
+  background-color: $background-light;
+  .nav-logo {
+    img {
+      max-width: 100px;
+      min-width: 50px;
+    }
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-cta {
+    display: none;
+  }
+  .nav-burger {
+    color: white;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  nav {
+    padding: 0 5%;
+    .nav-links {
+      display: flex;
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        padding: 0 1rem;
+        font-size: 1.2em;
+      }
+    }
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 3rem;
+      width: 9rem;
+      border: 2px solid $accent-color;
+      border-radius: 0.5rem;
+      color: $accent-color;
+      font-size: 1.2em;
+      background-color: transparent;
+      &:hover {
+        background-color: $accent-color;
+        color: black;
+        cursor: pointer;
+      }
+    }
+    .nav-burger {
+      display: none;
+    }
+  }
+}

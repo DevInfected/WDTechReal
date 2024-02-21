@@ -1,0 +1,224 @@
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10%;
+  background-color: $background-dark;
+  .contact-left {
+    .title {
+      margin-bottom: 1em;
+      font-size: 1.8em;
+      color: $primary-color;
+    }
+    .form-container {
+      .form-wrapper {
+        display: flex;
+        flex-direction: column;
+        span {
+          margin-bottom: 0.5rem;
+          color: $primary-color;
+        }
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        input {
+          background-color: $primary-color;
+          padding: 0.8rem;
+          outline: none;
+          border: none;
+          border-radius: 2px;
+          margin-bottom: 1.6em;
+          max-width: 40em;
+        }
+        textarea {
+          background-color: $primary-color;
+          padding: 0.5rem;
+          outline: none;
+          border: none;
+          border-radius: 2px;
+          margin-bottom: 1rem;
+          min-height: 4em;
+          max-width: 40em;
+        }
+        button {
+          min-height: 3em;
+          max-width: 25vh;
+          background-color: $accent-color;
+          color: black;
+          outline: none;
+          border: none;
+          border-radius: 2px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .contact-right {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #contact {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding: 5% 10%;
+    min-height: 50vh;
+    background-color: $background-dark;
+    .contact-left {
+      margin-right: 2rem;
+      .title {
+        margin-bottom: 2em;
+        font-size: 2em;
+        color: $primary-color;
+      }
+      .form-container {
+        .form-wrapper {
+          display: flex;
+          flex-direction: column;
+          span {
+            margin-bottom: 0.5rem;
+            color: $primary-color;
+          }
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          input {
+            background-color: $primary-color;
+            padding: 0.8rem;
+            outline: none;
+            border: none;
+            border-radius: 2px;
+            margin-bottom: 1.6em;
+            min-width: 30em;
+          }
+          textarea {
+            background-color: $primary-color;
+            padding: 0.5rem;
+            outline: none;
+            border: none;
+            border-radius: 2px;
+            margin-bottom: 1rem;
+            min-height: 4em;
+            min-width: 30em;
+          }
+          button {
+            min-height: 3em;
+            max-width: 25vh;
+            background-color: $accent-color;
+            color: black;
+            outline: none;
+            border: none;
+            border-radius: 2px;
+            font-weight: 600;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .contact-right {
+      display: flex;
+      flex-direction: column;
+      .contact-right-wrapper {
+        margin-bottom: 2rem;
+        text-wrap: nowrap;
+        span {
+          font-size: 1.1em;
+          color: $primary-color;
+        }
+        i {
+          margin-right: 0.5rem;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #contact {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding: 5% 2%;
+    min-height: 50vh;
+    background-color: $background-dark;
+    .contact-left {
+      margin-right: 2rem;
+      .title {
+        margin-bottom: 2em;
+        font-size: 2.2em;
+        color: $primary-color;
+      }
+      .form-container {
+        .form-wrapper {
+          display: flex;
+          flex-direction: column;
+          span {
+            margin-bottom: 0.5rem;
+            color: $primary-color;
+          }
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          input {
+            background-color: $primary-color;
+            padding: 0.8rem;
+            outline: none;
+            border: none;
+            border-radius: 2px;
+            margin-bottom: 1.6em;
+            min-width: 40em;
+          }
+          textarea {
+            background-color: $primary-color;
+            padding: 0.5rem;
+            outline: none;
+            border: none;
+            border-radius: 2px;
+            margin-bottom: 1rem;
+            min-height: 4em;
+            min-width: 40em;
+          }
+          button {
+            min-height: 3em;
+            max-width: 25vh;
+            background-color: $accent-color;
+            color: black;
+            outline: none;
+            border: none;
+            border-radius: 2px;
+            font-weight: 600;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .contact-right {
+      display: flex;
+      flex-direction: column;
+      .contact-right-wrapper {
+        margin-bottom: 2rem;
+        text-wrap: nowrap;
+        span {
+          font-size: 1.5em;
+          color: $primary-color;
+        }
+        i {
+          margin-right: 0.5rem;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

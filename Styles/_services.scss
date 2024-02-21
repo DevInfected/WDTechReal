@@ -1,0 +1,107 @@
+@import "_globals";
+
+#services {
+  padding: 10% 10%;
+  background-color: $background-light;
+  .service-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    .services-span {
+      color: $accent-color;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+    .services-title {
+      color: $primary-color;
+      font-size: 1.6em;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+  }
+
+  .services-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .services-card {
+      min-width: 10em;
+      max-width: 20em;
+      min-height: 25em;
+      padding: 1rem;
+      background: $background-dark;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: space-evenly;
+      margin-bottom: 2em;
+      border-radius: 10px;
+      img {
+        max-height: 100px;
+      }
+      .card-title {
+        color: $primary-color;
+        font-size: 1.4em;
+      }
+      .card-disc {
+        color: $secondary-color;
+        line-height: 1.5em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #services {
+    padding: 5% 10%;
+    min-height: 40vh;
+    .service-intro {
+      .services-span {
+        font-size: 1em;
+      }
+      .services-title {
+        font-size: 2em;
+      }
+    }
+    .services-card-container {
+      min-width: 40em;
+      flex-direction: row;
+      gap: 2em;
+    }
+  }
+}
+@media screen and (min-width: 1600px) {
+  #services {
+    padding: 5% 10%;
+    min-height: 40vh;
+    .service-intro {
+      .services-span {
+        font-size: 1.375em;
+      }
+      .services-title {
+        font-size: 3em;
+        margin-bottom: 2rem;
+      }
+    }
+    .services-card-container {
+      min-width: 40em;
+      flex-direction: row;
+      gap: 2em;
+      .services-card {
+        min-width: 10em;
+        max-width: 30em;
+        min-height: 30em;
+        .card-title {
+          font-size: 2em;
+        }
+        .card-disc {
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+}

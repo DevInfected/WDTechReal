@@ -1,0 +1,124 @@
+footer {
+  padding: 10% 5%;
+  background-color: $background-light;
+  .footer-intro {
+    margin-bottom: 1rem;
+    .title {
+      color: $primary-color;
+      font-size: 1.8em;
+      margin-bottom: 0.5rem;
+    }
+    .sub-title {
+      color: $secondary-color;
+      font-size: 1em;
+      letter-spacing: 0.5px;
+    }
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    h2 {
+      font-size: 1.2em;
+      color: $primary-color;
+      margin-bottom: 1rem;
+    }
+    .browse-links {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+
+      a {
+        text-decoration: none;
+        color: $secondary-color;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .packages {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+      a {
+        text-decoration: none;
+        color: $secondary-color;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .contacts {
+      margin-bottom: 1rem;
+      color: $secondary-color;
+      .contacts-wrapper {
+        margin-bottom: 0.5rem;
+        i {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  footer {
+    padding: 4% 15%;
+    background-color: $background-light;
+    .footer-intro {
+      margin-bottom: 1rem;
+      .title {
+        color: $primary-color;
+        font-size: 3em;
+        margin-bottom: 0.5rem;
+      }
+      .sub-title {
+        color: $secondary-color;
+        font-size: 1.375em;
+        letter-spacing: 0.5px;
+      }
+    }
+    .footer-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 3rem;
+      max-width: 70em;
+      h2 {
+        font-size: 2em;
+        color: $primary-color;
+        margin-bottom: 1rem;
+      }
+      .browse-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+        a {
+          text-decoration: none;
+          color: $secondary-color;
+          margin-bottom: 1rem;
+          font-size: 1.2em;
+        }
+      }
+      .packages {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        a {
+          text-decoration: none;
+          color: $secondary-color;
+          margin-bottom: 1rem;
+          font-size: 1.2em;
+        }
+      }
+      .contacts {
+        margin-bottom: 1rem;
+        color: $secondary-color;
+        .contacts-wrapper {
+          margin-bottom: 1rem;
+          font-size: 1.2em;
+          i {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

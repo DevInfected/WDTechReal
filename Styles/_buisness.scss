@@ -1,0 +1,151 @@
+#buisness {
+  padding: 10%;
+  background-color: $background-light;
+  .buisness-left {
+    .temp-img {
+      max-height: 30em;
+      margin-bottom: 3rem;
+      max-width: 20em;
+    }
+  }
+  .buisness-right {
+    max-width: 45em;
+    .buisness-intro {
+      .divider {
+        max-width: 5em;
+        min-height: 3px;
+        background-color: $accent-color;
+      }
+      .title {
+        color: $primary-color;
+        font-size: 1.7em;
+        padding-top: 1.5rem;
+      }
+    }
+    .buisness-disc {
+      color: $secondary-color;
+      padding: 2rem 0;
+      line-height: 1.4em;
+    }
+
+    .quote {
+      color: black;
+      min-height: 3rem;
+      min-width: 9rem;
+      border-radius: 5px;
+      border: none;
+      background-color: $accent-color;
+      font-weight: 600;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #buisness {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 5% 10%;
+    .buisness-left {
+      .temp-img {
+        max-height: 25em;
+        min-height: 20em;
+        max-width: 25em;
+        margin-left: 5rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1600px) {
+  #buisness {
+    padding: 5% 10%;
+    background-color: $background-light;
+    .buisness-left {
+      .temp-img {
+        max-height: 40em;
+        min-height: 35em;
+        max-width: 40em;
+        margin-bottom: 3rem;
+      }
+    }
+    .buisness-right {
+      .buisness-intro {
+        .divider {
+          max-width: 5em;
+          min-height: 3px;
+          background-color: $accent-color;
+        }
+        .title {
+          color: $primary-color;
+          font-size: 3em;
+          padding-top: 1.5rem;
+        }
+      }
+      .buisness-disc {
+        color: $secondary-color;
+        padding: 3rem 0;
+        line-height: 1.6em;
+        font-size: 1.3em;
+      }
+
+      .quote {
+        color: black;
+        min-height: 3rem;
+        min-width: 9rem;
+        border-radius: 5px;
+        border: none;
+        background-color: $accent-color;
+        font-weight: 600;
+      }
+    }
+  }
+}
+@media screen and (min-width: 2000px) {
+  #buisness {
+    padding: 5% 10%;
+    background-color: $background-light;
+    .buisness-left {
+      .temp-img {
+        max-height: 40em;
+        min-height: 35em;
+        max-width: 40em;
+        margin-bottom: 3rem;
+        margin-right: 2rem;
+      }
+    }
+    .buisness-right {
+      .buisness-intro {
+        .divider {
+          max-width: 5em;
+          min-height: 3px;
+          background-color: $accent-color;
+        }
+        .title {
+          color: $primary-color;
+          font-size: 3em;
+          padding-top: 1.5rem;
+        }
+      }
+      .buisness-disc {
+        color: $secondary-color;
+        padding: 3rem 0;
+        line-height: 1.6em;
+        font-size: 1.3em;
+      }
+
+      .quote {
+        color: black;
+        min-height: 3rem;
+        min-width: 9rem;
+        border-radius: 5px;
+        border: none;
+        background-color: $accent-color;
+        font-weight: 600;
+      }
+    }
+  }
+}
