@@ -30,7 +30,7 @@ nav {
   min-height: 8rem;
   padding: 0 10%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid orange;
   background-color: #1e1e1e;
@@ -51,10 +51,11 @@ nav .nav-burger {
 
 @media screen and (min-width: 1000px) {
   nav {
-    padding: 0 5%;
+    padding: 0 10%;
   }
   nav .nav-links {
     display: flex;
+    justify-content: space-around;
   }
   nav .nav-links a {
     color: #ffffff;
@@ -81,6 +82,11 @@ nav .nav-burger {
   }
   nav .nav-burger {
     display: none;
+  }
+}
+@media screen and (min-width: 2000px) {
+  nav {
+    padding: 0 15%;
   }
 }
 * {
